@@ -7,7 +7,7 @@ html, body {
 }
 
 body{
-    background-color: #ecf0f1;
+    background-color: #fff;
     background-image: url('../img/circuit-board.svg');
 }
 
@@ -157,7 +157,7 @@ div#fondo {
     align-items: center;
     justify-content: center;
     color: white;
-    margin-bottom: 1em;
+    margin-bottom: 100px;
 }
 
 div#fondo #fondo-img{
@@ -208,6 +208,189 @@ div#encabezado h3{
     font-size: 3.5em;
 }
 
+section#somos{
+    padding-bottom: 2em;
+    margin-bottom: 3em;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    -webkit-border-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(40,40,40, 0.7), rgba(0,0,0,0)) 100% 1;
+    -moz-border-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(40,40,40, 0.7), rgba(0,0,0,0)) 100% 1;
+    border-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(40,40,40, 0.7), rgba(0,0,0,0)) 100% 1;
+}
+
+section h4.section-title{
+    text-align: center;
+    font-size: 1.5em;
+    /*font-family: 'Lato';*/
+    color: #333;
+    margin: 0;
+    margin-bottom: 1em;
+    font-family: 'Existence'
+}
+
+section#somos p{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    /*font-weight: normal;*/
+    color: #7e7e7e;
+    line-height: 25px;
+}
+
+
+section#servicios{
+    margin-bottom: 2em;
+    position: relative;
+}
+
+section#servicios p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+section#servicios #service-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 4em auto 0 auto;
+    width: 80%;
+}
+
+section#servicios #service-wrapper article{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 24%;
+    border: 1px solid #f2f2f2;
+    padding: 1em;
+    box-sizing: border-box;
+    transition: background 0.2s ease-in;
+}
+
+section#servicios #service-wrapper article:hover{
+    background-color: #222;
+    color: white;
+}
+
+#service-wrapper article span.service-icon{
+}
+
+#service-wrapper article:hover span.service-icon{
+    color: #d6b161;
+}
+
+#service-wrapper article span.service-title{
+    margin-top: 1em;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#service-wrapper article p{
+    font-weight: lighter;
+    font-size: 16px;
+    padding: 1em;
+    margin: 0;
+    /*text-shadow: 1px 1px 1px rgba(0,0,0,0.2);*/
+    color: #7e7e7e;
+}
+
+#service-wrapper article a{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+#service-wrapper article:hover a{
+    color: white;
+}
+
+#service-wrapper article a:hover{
+    color: #d6b161;
+}
+
+section#contacto{
+    background-color: #2c3e50;
+    color: white;
+    padding: 2em;
+    display: flex;
+    flex-flow: column;
+}
+
+section#contacto h5{
+    margin: 0;
+    font-size: 2em;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+section#contacto #contact-wrapper{
+    display: flex;
+    flex-flow: row;
+    align-items: stretch;
+}
+
+section#contacto #contact-wrapper #google-map,
+section#contacto #contact-wrapper form,
+section#contacto #contact-wrapper ul{
+    width: 33%;
+}
+
+section#contacto #contact-wrapper form{
+    display: flex;
+    flex-flow: column;
+    box-sizing: border-box;
+}
+
+section#contacto #contact-wrapper form input,
+section#contacto #contact-wrapper form textarea{
+    background-color: #1d2534;
+    border: none;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+section#contacto #contact-wrapper form button{
+    background-color: #3498db;
+    padding: 0.8em 4em 0.8em 4em;
+    border: none;
+    color: #fff;
+    font-weight: lighter;
+    border-radius: 5px;
+    box-shadow: 0px 6px 0px #2980b9;
+}
+
+section#contacto #contact-wrapper ul{
+    margin: 0;
+    list-style: none;
+    padding: 0 4em;
+    box-sizing: border-box;
+}
+
+section#contacto #contact-wrapper ul li{
+    margin-bottom: 1em;
+    padding-bottom: .5em;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    -webkit-border-image: -webkit-linear-gradient(left, rgba(255,255,255, 0.7), rgba(0,0,0,0)) 100% 1;
+    -moz-border-image: -moz-linear-gradient(left, rgba(255,255,255, 0.7), rgba(0,0,0,0)) 100% 1;
+    border-image: -ms-linear-gradient(left, rgba(255,255,255, 0.7), rgba(0,0,0,0)) 100% 1;
+}
+
+section#contacto #contact-wrapper ul li > span{
+    color: #d6b161;
+    margin-right: 1em;
+}
+
+section#contacto #contact-wrapper #google-map{
+    box-sizing: border-box;
+    margin-right: 2em;
+}
+
+
+/* Store */
 div#store-wrapper{
     display: flex;
     align-items: stretch;
@@ -417,11 +600,10 @@ section#services div#polizas article.poliza ul{
 
 footer{
     width: 100%;
-    background-color: #2c3e50;
+    background-color: #1a252f;
     padding: 1em;
     color: #ecf0f1;
     text-align: center;
-    margin-top: 1em;
     box-sizing: border-box;
 }
 
