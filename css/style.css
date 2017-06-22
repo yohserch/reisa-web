@@ -291,8 +291,8 @@ section#servicios #service-wrapper article:hover{
     font-size: 16px;
     padding: 1em;
     margin: 0;
-    /*text-shadow: 1px 1px 1px rgba(0,0,0,0.2);*/
     color: #7e7e7e;
+    text-align: justify;
 }
 
 #service-wrapper article a{
