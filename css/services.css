@@ -1,0 +1,239 @@
+html, body {
+    margin: 0;
+    font-size: 16px;
+    background-color: #fff;
+    font-family: 'Lato';
+    font-weight: lighter;
+}
+
+header {
+    background-color: #2c3e50;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    height: 70px;
+}
+
+header div#logo {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 20%;
+    justify-content: center;
+}
+
+header div#logo::after{
+    content: '';
+    border-bottom: 35px solid transparent;
+    border-left: 35px solid #fff;
+    border-right: 35px solid transparent;
+    border-top: 35px solid #fff;
+    position: absolute;
+    right: -70px;
+}
+
+header div#logo img{
+    width: 90px;
+    height: auto;
+}
+
+div.title-wrapper{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+header div#logo h1, header div#logo h2{
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    font-family: 'Arial';
+    color: #2e5fa4;
+}
+
+header nav{
+    font-family: 'Lato';
+    font-weight: lighter;
+    font-size: 18px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    width: 80%;
+}
+
+header nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    align-self: center;
+    height: 100%;
+    color: white;
+}
+header nav ul:last-child{
+    padding-right: 2em;
+}
+
+header nav ul span{
+    padding-left: 2px;
+    padding-right: 2px;
+    color: #1bbc9b;
+    font-size: 20px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+    height: 45px;
+    line-height: 45px;
+    margin: 15px 25px;
+    outline: none;
+}
+
+header nav ul li a::before,
+header nav ul li a::after{
+    position: absolute;
+    width: 45px;
+    height: 2px;
+    background-color: rgb(255,255,255);
+    content: '';
+    opacity: 0.1;
+    transition: all 0.3s;
+    pointer-events: none;
+    box-sizing: border-box;
+}
+
+header nav ul li a::before{
+    top: 0;
+    left: 0;
+    transform: rotate(90deg);
+    transform-origin: 0 0; 
+}
+
+header nav ul li a::after{
+    right: 0;
+    bottom: 0;
+    transform: rotate(90deg);
+    transform-origin: 100% 0;
+}
+
+header nav ul li a:hover::before,
+header nav ul li a:hover::after{
+    opacity: 1;
+}
+
+header nav ul li a:hover::before{
+    left: 50%;
+    transform: rotate(0deg) translateX(-50%);
+}
+
+header nav ul li a:hover::after{
+    right: 50%;
+    transform: rotate(0deg) translateX(50%);
+}
+
+div#fixer{
+    height: 70px;
+    width: 100%;
+}
+
+div#fondo {
+    background: linear-gradient(275deg, rgba(224,224,224,1) 0%, rgba(255,255,255,1) 100%);
+    height: 300px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+}
+
+div#fondo .particles-js-canvas-el{
+    position: absolute;
+    z-index: -9;
+}
+
+div#fondo h3 {
+    font-family: 'Lato';
+    font-size: 18px;
+    width: 50%;
+    color: #000;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin: 0;
+    margin-left: 4em;	
+    text-transform: uppercase;
+    color: #545454;
+    width: calc(70% - 4em);
+}
+
+div#fondo h3:hover > i{
+	color: #d6b161;
+}
+
+div#fondo div {
+	width: 30%;
+	font-size: 14px;
+	text-align: center;
+}
+
+div#fondo div a{
+	color: #7e7e7e;
+	text-decoration: none;
+
+}
+
+div#fondo div a:hover{
+	color: #d6b161;
+}
+
+div#fondo div span{
+	color: #000;
+}
+
+section.content{
+	width: 50%;
+	margin: 2em auto;
+}
+
+section.content .heading-title{
+	display: flex;
+	align-items: center;
+	margin-bottom: 1.5em;
+}
+
+section.content .heading-title h4{
+	text-transform: uppercase;
+	font-weight: lighter;
+	letter-spacing: 2px;
+	font-size: 1.3em;
+	margin: 0;
+	width: 35%;
+}
+
+section.content .title-border{
+	border-bottom: 1px solid #e2e2e2;
+	height: 1px;
+	width: 65%;
+}
+
+section.content .section-content{
+	color: #7e7e7e;
+}
+
+section.content .section-content img{
+	width: 100%;
+}
+
+section.content .section-content ul{
+}
+
+section.content .section-content ul li{
+	margin-bottom: 1em;
+}
